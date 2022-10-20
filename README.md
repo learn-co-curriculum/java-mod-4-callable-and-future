@@ -14,9 +14,7 @@ we want the tasks to return a result. The `Callable` interface along with the
 
 ## Callable
 
-The `[Callable`
-interface](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html#method.detail)
-is a functional interface with a `call` method that returns a value.
+`Callable` is a functional interface with a `call` method that returns a value.
 
 ```java
 public interface Callable<V> {
@@ -40,7 +38,7 @@ The `Future` interface has the following methods:
 - `isCancelled`: It returns `true` if the `cancel` method was called on the task
   before it finished running.
 
-## Example
+## Example  
 
 ```java
 import java.util.concurrent.*;
@@ -84,3 +82,9 @@ program waits for the tasks to complete and return a result before continuing.
 We learned how to use `Callable` and `Future` the interfaces in this lesson.
 They make it easier to handle results from asynchronous computation by providing
 simple methods for checking task status and accessing their return values.
+
+
+## Resources
+
+[Java 11 Callable](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html)    
+[Java 11 Future](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html)  
